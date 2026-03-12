@@ -1,0 +1,7 @@
+----------------------
+Email: johndoe@gmail.com
+First name: john
+Last name: doe
+Password: password
+Date of Birth: 2005-03-12
+----------------------
