@@ -80,9 +80,13 @@ def main():
                     reservation_menu(user_email)
 
             case 3:
-                print("Exiting...")
+                print("\nThank you for using our Reservation System")
                 return
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"\n[ERROR]: An unexpected error occurred: {e}")
+        print("\nThank you for using our Reservation System")
