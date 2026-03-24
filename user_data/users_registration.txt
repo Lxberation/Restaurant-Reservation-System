@@ -13,3 +13,11 @@ Last name: tariq
 Password: s123
 Date of Birth: 2003-02-13
 ----------------------
+
+----------------------
+Email: johndoe@gmail.com
+First name: john
+Last name: doe
+Password: pass
+Date of Birth: 2005-05-12
+----------------------

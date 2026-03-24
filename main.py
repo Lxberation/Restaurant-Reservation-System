@@ -5,8 +5,12 @@ from utils.viewreservation import ViewReservation
 from utils.modifyreservation import ModifyReservation
 from utils.cancelreservation import CancelReservation
 
-def reservation_menu(user_email):
+def reservation_menu(user_email:str)->None:
+    """
+    Display the post-login reservation menu and route the user to the
+    appropriate feature based on their selectio
     print("\n===== Reservation Menu =====\n")
+    """
 
     while True:
         try:
@@ -48,7 +52,11 @@ def reservation_menu(user_email):
                 print("\n[ERROR]: Invalid option, choose 1 - 5")
 
 
-def main():
+def main()->None:
+    """
+    Entry point. Displays the main menu and routes to Register, Login, or Exit.
+    The program only exits via option 3 (Exit) as required by the spec.
+    """
     print('==== Restaurant Reservation Menu ====\n')
 
     while True:
