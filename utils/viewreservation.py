@@ -3,11 +3,12 @@ from utils.config import PROJECT_ROOT
 
 class ViewReservation:
 
-    def __init__(self, email):
+    def __init__(self, email:str)->None:
         self.email = email
         self.data_path = os.path.join(PROJECT_ROOT, "user_data", "user_reservation.txt")
 
-    def start_view(self):
+    def start_view(self)->None:
+        """Prints out all of users reservations"""
         print("\n===== Your Reservations =====\n")
 
         if not os.path.exists(self.data_path):
