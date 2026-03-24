@@ -5,11 +5,12 @@ from utils.custom_exceptions import InvalidDateRangeError
 
 class ModifyReservation:
 
-    def __init__(self, email):
+    def __init__(self, email:str):
         self.email = email
         self.data_path = os.path.join(PROJECT_ROOT, "user_data", "user_reservation.txt")
 
-    def get_int(self, prompt):
+    def get_int(self, prompt:str)->int:
+        """Validates and returns user integer selection"""
         while True:
             value = input(prompt).strip()
             if value == "":
@@ -20,7 +21,8 @@ class ModifyReservation:
             except ValueError:
                 print("[ERROR]: Please enter a valid number.")
 
-    def get_date(self, prompt):
+    def get_date(self, prompt:str) -> str:
+        """Gets user date and validates it"""
         while True:
             value = input(prompt).strip()
             if value == "":
@@ -31,7 +33,8 @@ class ModifyReservation:
             except ValueError:
                 print("[ERROR]: Invalid date format. Use YYYY-MM-DD.")
 
-    def start_modify(self):
+    def start_modify(self) -> None:
+        """Starts user modification of reservation process"""
         print("\n===== Modify Reservation =====\n")
 
         if not os.path.exists(self.data_path):
