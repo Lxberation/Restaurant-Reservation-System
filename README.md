@@ -23,7 +23,7 @@ Shahzan Tariq - 0785469
 
     - Login functionality (login.py)
     - Create reservation logic (makereservation.py)
-    - Modify reservation logic (modifyreservation.py)
+    - View reservation logic (modifyreservation.py)
     - logout functionality
 
 **Shahzan's Contribution**:
